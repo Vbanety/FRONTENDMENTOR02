@@ -2,7 +2,7 @@
 
 ## CONTINUING CHALLENGES IN THE REPOSITORY 02
 
-![Design preview for the Chat app CSS illustration coding challenge](./design/desktop-preview.jpg)
+<img src="https://miro.medium.com/max/1124/1*dWe_Ryn_omllG8E6eeuWEw.png">
 
 ## Welcome! 👋
 
