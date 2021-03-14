@@ -45,7 +45,6 @@ header {
     padding: 50px;
 }
 
-
 header img {
     width: 180px;
 }
@@ -63,7 +62,6 @@ header ul {
 header ul li {
     margin: auto 30px;
 }
-
 
 .section-one, .section-two, .section-three, footer {
     display: flex;
@@ -97,7 +95,7 @@ header ul li {
     display: flex;
 }
 
-.sec-discreption form input{
+.sec-discreption form input {
     height: 40px;
 }
 
@@ -107,7 +105,7 @@ header ul li {
 
 .sec-discreption form input[type=submit] {
     width: 200px;
-    background-color: var(--Bright-Blue);    
+    background-color: var(--Bright-Blue);
     border-radius: 5px;
     border: none;
     color: #fff;
@@ -119,7 +117,7 @@ header ul li {
     background-color: #8499F0;
 }
 
-figure  {
+figure {
     width: 50%;
     display: flex;
     align-items: center;
@@ -128,7 +126,6 @@ figure  {
 
 figure img {
     width: 90%;
-    
 }
 
 .section-two {
@@ -227,16 +224,16 @@ figure img {
     align-items: center;
     z-index: -3;
 }
+
 .section-three {
     background-color: var(--Desaturated-Blue);
     color: #fff;
     padding-top: 80px;
     padding-bottom: 80px;
-    
     justify-content: space-between;
 }
 
-.section-three div h2  {
+.section-three div h2 {
     font-size: 35px;
     margin-bottom: 10px;
 }
@@ -268,11 +265,12 @@ figure img {
     color: #fff;
     padding: 0;
     width: 40%;
-} 
+}
 
 .section-three form input[type=submit]:hover {
     background-color: #8499F0;
 }
+
 footer {
     background-color: var(--Very-Dark-Blue);
     color: #fff;
@@ -294,15 +292,14 @@ footer {
     margin-bottom: 10px;
 }
 
-
 .list-contacts li a {
     color: inherit;
     text-decoration: none;
 }
 
-.social-media  {
+.social-media {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     margin: 10px 0;
     height: 35px;
 }
@@ -317,14 +314,59 @@ footer {
     padding: 8px;
 }
 
-.social-media li:hover {
-    /* border: 1px solid var(--Bright-Blue); */
-    background-color: var(--Bright-Blue);
+.social-media li a:hover {
+    z-index: -2;
 }
 
 .social-media li img {
     width: 15px;
     height: 15px;
+}
+
+.media {
+    width: 30px;
+    height: 30px;
+}
+
+.face {
+    background: url(/images/icon-facebook.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+.twitter {
+    background: url(/images/icon-twitter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+.insta {
+    background: url(/images/icon-instagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+
+.media:hover {
+    border: 1px solid #8499F0;
+}
+
+.face:hover {
+    background-image: url('/images/icon-facebook-active.svg');
+}
+
+.twitter:hover {
+    background-image: url('/images/icon-twitter-active.svg');
+}
+
+.insta:hover {
+    background-image: url('/images/icon-instagram-active.svg');
+}
+
+.media a {
+    color: rgba(0, 0, 0, .01);
 }
 
 .contacts {
@@ -337,167 +379,129 @@ footer {
     margin-right: 15px;
 }
 
-
-
 @media(max-width: 900px) {
-
     body {
         width: 100%;
     }
-
     #container {
         width: auto;
     }
-
     .section-one, .section-two, .section-three, footer, header {
         padding: 20px;
     }
-
     header {
         justify-content: space-between;
     }
-
     header img {
         width: 100px;
     }
-
     .header-list {
-        width: 50%;        
+        width: 50%;
     }
-
     .header-list li {
         font-size: 12px;
         font-weight: 400;
         margin: 0;
     }
-
     .section-one, .section-two, .section-three, footer {
         flex-direction: column;
     }
-
     .section-one {
         flex-direction: column-reverse;
         margin-bottom: 120px;
     }
-
     .section-one figure {
         width: auto;
     }
-
     .section-two::after {
         background-image: url('/images/bg-curve-mobile.svg');
         height: 50px;
         top: -50px;
     }
-
-    .section-two figure  {
+    .section-two figure {
         align-items: center;
         width: auto;
         margin-bottom: 30px;
     }
-    
     .section-two figure img {
         width: 100%;
     }
-
     .section-two .article {
         width: 100%;
         align-items: center;
     }
-
     .section-two .article h1 {
         font-size: 20px;
     }
-
     .section-two .article p {
         width: 100%;
     }
-
     .span-color {
         margin: auto;
     }
-
-    .sec-discreption  {
+    .sec-discreption {
         width: auto;
         text-align: center;
     }
-
     .sec-discreption h1 {
         font-size: 25px;
     }
-
     .sec-discreption form {
         align-items: center;
         flex-direction: column;
     }
-
     .sec-discreption form input {
         margin: 10px 0;
     }
-
     .sec-discreption form input:first-child {
         width: 100%;
     }
-
     .sec-discreption form input:last-child {
         width: 100%;
         margin-left: 0;
     }
-
     .card {
         width: 90%;
     }
-
     .card p {
         font-size: 10px;
         width: 100%;
     }
-    
     .section-three {
         align-items: center;
         text-align: center;
     }
-
     .section-three div {
         width: 90%;
         margin-top: 40px;
     }
-
     .section-three div h2 {
         font-size: 20px;
     }
-
     .section-three form {
         margin-top: 20px;
         margin-bottom: 40px;
         width: 70%;
-        
     }
-
     .section-three form input {
         width: 100%;
     }
-
     .section-three form input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
-
     footer {
         width: 100%;
         padding: 0 40px;
         margin: 0 auto 10px auto;
     }
-
     .flex-contacts {
         flex-direction: column;
         width: 100%;
     }
-    
     .list-contacts {
         margin: 20px 0;
     }
-
     .social-media {
         width: auto;
     }
