@@ -67,7 +67,7 @@ span {
 
 #card {
     background-color: #fff;
-    width: 87%;
+    width: 325px;
     height: 375px;
     border-radius: 20px;
     display: flex;
@@ -134,8 +134,8 @@ span {
 
 @media (min-width: 1000px) {
     #card {
-        width: 25.55%;
-        height: 56.5%;
+        width: 390px;
+        height: 416px;
     }
 
     body::after {
