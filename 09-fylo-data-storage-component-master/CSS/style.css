@@ -29,6 +29,8 @@
 body {
     background-image: url('/images/bg-mobile.png');
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--Very-Dark-Blue);
     height: 100vh;
     margin: auto;
     display: flex;
@@ -58,7 +60,7 @@ main {
 }
 
 .logo {
-    width: 130px;
+    width: 150px;
     margin-bottom: 30px;
 }
 
@@ -121,13 +123,11 @@ figure {
 
 .data {
     display: flex;
+    justify-content: space-between;
     font-weight: 700;
     margin-bottom: 20px;
     position: relative;
-}
-
-.space {
-    padding-right: 160px;
+    width: 100%;
 }
 
 .total {
@@ -153,14 +153,61 @@ figure {
     font-weight: 700;
 }
 
-@media screen and (max-with: 480px) {
+@media(min-width: 900px) {
     body {
-        /* background-image: url('/images/bg-desktop.png');
-        background-position: center; */
-        background-color: #fff;
+        background-image: url('/images/bg-desktop.png');
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
 
     main {
+        display: flex;
+        align-items:flex-end;
+        justify-content: space-between;
         flex-direction: row;
+        width: 70%;
+        height: auto;
+    }
+
+    #box-1 {
+        width: 36.5%;
+        min-width: 260px;
+        height: 225px;
+    }
+
+    #box-1 .logo {
+        width: 150px;
+    }
+
+    #box-2 {
+        width: 56.3%;
+        min-width: 48%;
+    }
+
+    .space {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .total {
+        top: -55px;
+        right: 40px;
+        border-bottom-right-radius: 0;
+    }
+
+    .total::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 20px;
+        background: #fff;
+        position: absolute;
+        top: 80px;
+        right: -5px;
+        left: calc(100% - 25px);
+        clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        z-index: 2;
+        transform: rotate(-90deg);
     }
 }
