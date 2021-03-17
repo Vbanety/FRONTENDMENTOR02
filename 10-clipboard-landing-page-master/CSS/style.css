@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', 'sans-serif';
+}
+
+::after, ::before {
+    box-sizing: inherit;
+}
+
+:root {
+/* ## Colors */
+/* ### Primary */
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+
+/* ### Neutral */
+--Dark-Grayish-Blue: hsl(210, 3%, 54%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+
+body {
+    padding: 30px;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+p  {
+    color: var(--Grayish-Blue);
+}
+
+
+h1,
+h2,
+h3 {
+    color: rgba(0,0,0, .7);
+    width: 80%;
+    /* margin: auto; */
+}
+
+#sec-one, #sec-two, #sec-three, #sec-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#sec-one {
+    justify-content: space-between;
+    height: 500px;
+}
+
+#sec-one h1 {
+    font-size: 28px;
+    /* margin-bottom: 20px; */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin-bottom: 150px; */
+}
+
+#sec-one button {
+    margin: 10px 0;
+    padding: 15px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+    outline: none;    
+}
+
+#sec-one button:first-child {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0px 3px 0px hsl(168, 52%, 39%);
+}
+
+#sec-one button:last-child {
+    background-color: var(--Light-Blue);
+    box-shadow: 0px 3px 0px hsl(233, 65%, 59%);
+}
+
+.copy-right {
+    width: 120px;
+    height: 120px;
+}
+
+figure {
+    width: auto;
+}
+
+figure img {
+    width: 100%;
+}
+
+#sec-two {
+    margin-top: 155px;
+}
+
+#sec-two .computer {
+    padding-bottom: 50px;
+}
+
+#sec-two h1 {
+    margin-bottom: 20px;
+}
+
+#sec-two h2 {
+    margin-bottom: 10px;
+}
+
+#sec-two p {
+    margin-bottom: 55px;
+}
+
+#sec-three {
+    margin-top: 115px;
+}
+
+#sec-three  h1 {
+    margin-bottom: 20px;
+}
+
+#sec-three h2 {
+    margin-bottom: 10px;
+}
+
+#sec-three figure img {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+#sec-three .workflow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+}
+
+
+#sec-three .workflow h3 {
+    margin-bottom: 20px;
+}
+
+#sec-three .workflow img {
+    width: 50px;
+    margin-top: 94px;
+    margin-bottom: 40px;
+}
+
