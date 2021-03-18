@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Bai Jamjuree', 'sans-serif';
+    line-height: 1.5;
 }
 
 ::after, ::before {
@@ -24,9 +25,17 @@
 
 
 body {
+    margin-top: 60px;
     padding: 30px;
     height: 100vh;
     display: flex;
+    background-image: url('/images/bg-header-mobile.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 120% 90%;
+    position: relative;
+    min-width: 375px;
+
 }
 
 main {
@@ -42,11 +51,13 @@ p  {
 
 
 h1,
-h2,
-h3 {
+h2 {
     color: rgba(0,0,0, .7);
     width: 80%;
-    /* margin: auto; */
+}
+
+h1 {
+    padding-bottom: 20px;
 }
 
 #sec-one, #sec-two, #sec-three, #sec-four {
@@ -54,26 +65,25 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 155px;
 }
 
 #sec-one {
     justify-content: space-between;
-    height: 500px;
+    height: auto;
 }
 
 #sec-one h1 {
     font-size: 28px;
-    /* margin-bottom: 20px; */
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* margin-bottom: 150px; */
 }
 
-#sec-one button {
+button {
     margin: 10px 0;
     padding: 15px;
     font-weight: 600;
@@ -83,12 +93,12 @@ h3 {
     outline: none;    
 }
 
-#sec-one button:first-child {
+button:first-child {
     background-color: var(--Strong-Cyan);
     box-shadow: 0px 3px 0px hsl(168, 52%, 39%);
 }
 
-#sec-one button:last-child {
+button:last-child {
     background-color: var(--Light-Blue);
     box-shadow: 0px 3px 0px hsl(233, 65%, 59%);
 }
@@ -107,35 +117,26 @@ figure img {
 }
 
 #sec-two {
-    margin-top: 155px;
+    height: auto;
+    justify-content: space-around;
 }
 
 #sec-two .computer {
     padding-bottom: 50px;
 }
 
-#sec-two h1 {
-    margin-bottom: 20px;
+#sec-two .info-computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#sec-two h2 {
-    margin-bottom: 10px;
+#sec-two .info-computer h2 {
+    margin-bottom: 15px;
 }
 
-#sec-two p {
-    margin-bottom: 55px;
-}
-
-#sec-three {
-    margin-top: 115px;
-}
-
-#sec-three  h1 {
-    margin-bottom: 20px;
-}
-
-#sec-three h2 {
-    margin-bottom: 10px;
+.flex-text {
+    padding-bottom: 40px;
 }
 
 #sec-three figure img {
@@ -143,19 +144,16 @@ figure img {
     margin-bottom: 100px;
 }
 
-
-
 #sec-three .workflow {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 600px;
 }
 
-
-#sec-three .workflow h3 {
-    margin-bottom: 20px;
+.workflow-flex h1 {
+    text-align: center;
+    margin: auto;
 }
 
 #sec-three .workflow img {
@@ -164,3 +162,200 @@ figure img {
     margin-bottom: 40px;
 }
 
+#sec-four .companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+#sec-four .companies img {
+    margin: 32px 0;
+    width: 130px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    width: 119%;
+    height: 100%;
+    margin-left: -30px;
+    left: 0px;
+    top: 0;
+    background-color: rgba(0,0,0, .03);
+}
+
+.copy-right2 {
+    width: 60px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 600;
+}
+
+footer ul li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 600px) {
+ 
+    body {
+        background-image: url('/images/bg-header-desktop.png');
+        padding: 0;
+    }
+
+    .buttons {
+        display: inline-flex;
+        flex-direction: row;
+        width: auto !important;
+    }   
+
+    #sec-one h1, #sec-three h1, #sec-four h1 {
+        font-weight: 600;
+        font-size: 38px;
+    }
+
+    .flex-text-desk {
+        width: 580px;
+        text-align: center;
+        font-weight: 400;
+        margin: auto;
+    }
+
+    button {
+        margin: 0 10px;
+        width: 225px;
+    }
+
+    #sec-two {
+        
+    }
+
+    #sec-two figure {
+        width: 50%;
+        left: -50px;
+    }
+
+    #sec-two figure img {
+        position: relative;
+        left: -50px;
+    }
+
+    .flex-computer-desk {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+    }
+
+
+    .info-computer {
+        width: 45%;
+        text-align: start;
+    }
+
+    .info-computer  h1, p {
+        margin-right: auto;
+        margin-left: 0;
+        width: 55%;
+    }
+
+    #sec-three h1 {
+        font-weight: 600;
+        font-size: 38px;
+    }
+
+    #sec-three p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer::before {
+        width: 102.2%;
+        /* margin-left: -30px; */
+    }
+
+    .align-title {
+        margin: auto;
+    }
+
+    #sec-three .workflow { 
+        flex-direction: row;
+    }   
+
+    .workflow-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 33.33%;    
+    }
+
+    #sec-four .companies {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    .footer-flex {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }   
+
+    .footer-flex i {
+        /* width: 20%; */
+    }
+
+    .contats-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /* width: 40%; */
+    }
+
+    .contats-flex li {
+        text-align: left;
+        margin-right: auto;
+    }
+
+    .social-media {
+        flex-direction: row;
+        width: 10%;
+    }
+
+}
